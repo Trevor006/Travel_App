@@ -11,14 +11,10 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-
   @override
   Widget build(BuildContext context) {
-
-
     return Scaffold(
       appBar: AppBar(
-
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
 
         title: Text(widget.title),
@@ -26,21 +22,21 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Column(
         children: <Widget>[
           Column(
-
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            ImageWidget(imagePath: "../assets/images/image.png", imageVariant: "large"),
-            const Text('You have pushed the button this many times:'),
-            Text(
-              'Yellow!',
-              style: Theme.of(context).textTheme.headlineMedium,
-            ),
-          ],
-        ),
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              ImageWidget(
+                imagePath: "../assets/images/image.png",
+                imageVariant: "large",
+              ),
+              const Text('You have pushed the button this many times:'),
+              Text(
+                'Yellow!',
+                style: Theme.of(context).textTheme.headlineMedium,
+              ),
+            ],
+          ),
         ],
-        
       ),
-      
     );
   }
 }
