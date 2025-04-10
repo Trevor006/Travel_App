@@ -16,7 +16,7 @@ class TextWidget extends StatelessWidget {
       switch (styleVariant) {
         case 'bold':
           return TextStyle(
-            fontSize: 30,
+            fontSize: 20,
             fontWeight: FontWeight.bold,
             color: Colors.black,
           );
@@ -28,7 +28,7 @@ class TextWidget extends StatelessWidget {
           );
         case 'light':
           return TextStyle(
-            fontSize: 20,
+            fontSize: 12,
             fontWeight: FontWeight.w300,
             color: Colors.black,
           );
