@@ -11,7 +11,6 @@ class MyApp extends StatelessWidget {
       title: 'Travel Application',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-     
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
       home: const MyHomePage(title: 'Flutter Demo Home Page'),
