@@ -28,6 +28,7 @@ class ImageWidget extends StatelessWidget {
       imagePath,
       width: styles['width'],
       height: styles['height'],
+      fit: BoxFit.fill,
     );
   }
 }

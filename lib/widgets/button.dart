@@ -7,19 +7,17 @@ class ButtonWidget extends StatelessWidget
   const ButtonWidget({
     super.key,
     required this.title,
-    required this.icon,
     required this.onPressed,
   });
 
   final String title;
-  final Icon icon;
+
   final VoidCallback onPressed;
 
   @override
   Widget build(BuildContext context) {
     return ElevatedButton.icon(
       onPressed: onPressed,
-      icon: icon,
       label: Text(title),
       style: ElevatedButton.styleFrom(
         backgroundColor: Theme.of(context).colorScheme.primaryContainer,
