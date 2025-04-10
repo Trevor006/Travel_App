@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:travel_app/widgets/search.dart';
 
 class DestinationPage extends StatefulWidget {
   const DestinationPage({super.key, required this.title});
