@@ -17,8 +17,8 @@ class SvgButtonWidget extends StatelessWidget {
     return SvgPicture.asset(
       assetPath,
       semanticsLabel: 'Icon',
-      width: 24,
-      height: 24,
+      width: 36,
+      height: 36,
     );
   }
 }

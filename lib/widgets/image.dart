@@ -15,20 +15,24 @@ class ImageWidget extends StatelessWidget {
     style() {
       switch (imageVariant) {
         case 'large':
-          return {"width": 500, "height": 300};
+          return {"width": 600.0, "height": 500.0};
         case 'small':
-          return {"width": 200, "height": 100};
+          return {"width": 200.0, "height": 100.0};
         default:
-          return {"width": 300, "height": 300};
+          return {"width": 300.0, "height": 300.0};
       }
     }
-
+    
     Map styles = style();
-    return Image.asset(
+    return ClipRRect(
+      borderRadius: BorderRadius.circular(30),
+      child:  Image.asset(
       imagePath,
       width: styles['width'],
       height: styles['height'],
-      fit: BoxFit.fill,
+      fit: BoxFit.cover,
+    ),
     );
+   
   }
 }
